@@ -12,7 +12,7 @@ agents = fuzzwords.readlines()
 
 for agent in agents:
 	header['User-Agent'] = agent.strip("\n")
-	response = requests.get("http://10.10.21.125/", headers = header)
+	response = requests.get("http://10.10.181.226", headers = header)
 	if response.status_code == 200 and response.content == matcher:
 		print("Blocked Response!")
 	else:
