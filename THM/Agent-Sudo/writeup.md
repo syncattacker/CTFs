@@ -56,7 +56,7 @@ nmap -sCV -A -nvv -p- -T5 --min-rate=10000 -o nmap.log <MACHINE-IP>
 
 ## Additional
 
-> Although this is the complete write-up with the exact steps to get into the machine, but I have also tried gobuster for directory enumeration as this was one of the basic checklists and the machine was not known to me. You can look at the gobuster logs [GoBuster Scan](./gobuster.log) or run the following command ```└─# gobuster dir -u "http://<MACHINE-IP>" -w /usr/share/wordlists/rockyou.txt -t 64 --no-errors -v -o gobuster.log```.
+> Although this is the complete write-up with the exact steps to get into the machine, but I have also tried gobuster for directory enumeration as this was one of the basic checklists and the machine was not known to me. You can look at the gobuster logs [GoBuster Scan](./gobuster.log) or run the following command ```gobuster dir -u "http://<MACHINE-IP>" -w /usr/share/wordlists/rockyou.txt -t 64 --no-errors -v -o gobuster.log```.
 
 ## References 
 - [Exploit-DB](https://www.exploit-db.com/exploits/47502)
